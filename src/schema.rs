@@ -31,8 +31,6 @@ diesel::table! {
     }
 }
 
-diesel::joinable!(course_user -> course (course_id));
-diesel::joinable!(course_user -> course_partiton_22_ss (course_id));
 diesel::joinable!(course_user -> user (member_user_id));
 
 diesel::allow_tables_to_appear_in_same_query!(
